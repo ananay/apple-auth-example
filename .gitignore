@@ -1,0 +1,5 @@
+config/AuthKey.p8
+config/config.json
+.AppleDouble
+node_modules
+.DS_Store
