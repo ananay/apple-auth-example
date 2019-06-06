@@ -1,5 +1,5 @@
 /**
- * Generates a JWT token for Apple auth
+ * Generates a client secret for Apple auth
  * using the private key.
  * @author: Ananay Arora <i@ananayarora.com>
  */
@@ -11,7 +11,6 @@ class AppleClientSecret {
 
   constructor(config, privateKeyLocation) {
     this._config = config;
-    console.log("CONFIG",config);
     this._privateKeyLocation = privateKeyLocation;
     this.generate = this.generate.bind(this);
     this._generateToken = this._generateToken.bind(this);
@@ -50,7 +49,7 @@ class AppleClientSecret {
 
   generate() {
     const privateKey = fs.readFileSync(this._privateKeyLocation);
-    let exp = Math.floor(Date.now() / 1000) + ( 86400 * 180 );
+    let exp = Math.floor(Date.now() / 1000) + ( 86400 * 180 ); // 6 months
     return this._generateToken(this._config.client_id, this._config.team_id, privateKey, exp, this._config.key_id);
   }
 }
