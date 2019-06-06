@@ -16,9 +16,23 @@ app.get('/token', (req, res) => {
 });
 
 app.get('/auth', async (req, res) => {
-    const accessToken = await auth.accessToken(req.query.code);
-    res.json(accessToken.data);
-    // console.log(req.query.code);
+    try {
+        const accessToken = await auth.accessToken(req.query.code);
+        res.json(accessToken);
+    } catch (ex) {
+        console.error(ex);
+        res.send("An error occurred!");
+    }
+});
+
+app.get('/refresh', async (req, res) => {
+    try {
+        const accessToken = await auth.refreshToken(req.query.refreshToken);
+        res.json(accessToken);
+    } catch (ex) {
+        console.error(ex);
+        res.send("An error occurred!");
+    }
 });
 
 app.listen(3000, () => {

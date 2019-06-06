@@ -27,7 +27,6 @@ class AppleClientSecret {
 
   _generateToken(clientId, teamId, privateKey, exp, keyid) {
     // Curate the claims
-    console.log("CLIENTID" + clientId);
     const claims = {
       iss: teamId,
       iat: Math.floor(Date.now() / 1000),
