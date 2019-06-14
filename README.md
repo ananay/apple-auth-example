@@ -29,6 +29,8 @@ Make a config.json file in the config/ folder from the sample given:
 }
 ```
 
+Also make sure you've placed your AuthKey file in the config folder as well!
+
 ## Questions / Contributing
 
 Feel free to open issues and pull requests. If you would like to be one of the core creators of this library, please reach out to me at i@ananayarora.com or message me on twitter @ananayarora!
