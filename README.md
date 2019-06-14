@@ -5,10 +5,12 @@
 <img src="https://img.shields.io/npm/v/apple-auth.svg"></img>
 </p>
 
-*This repository is a how-to-use example for my library – apple-auth*
+**This repository is a how-to-use example for my library – apple-auth**
 
 Check it out here:
+
 https://github.com/ananay/apple-auth
+
 https://npmjs.com/package/apple-auth
 
 ## Configuring
