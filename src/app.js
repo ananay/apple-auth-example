@@ -38,5 +38,5 @@ app.get('/refresh', async (req, res) => {
 });
 
 app.listen(3000, () => {
-    console.log("Listening on https://apple.exun.co");
+    console.log("Listening on https://apple.ananay.dev");
 })
