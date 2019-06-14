@@ -1,7 +1,7 @@
 {
   "name": "apple-auth-example",
-  "version": "0.0.1",
-  "description": "Apple Auth Exmaple",
+  "version": "1.0.0",
+  "description": "Apple Auth Example",
   "main": "src/app.js",
   "scripts": {
     "start": "nodemon src/app.js",
@@ -10,6 +10,6 @@
   "author": "Ananay Arora <i@ananayarora.com> (https://ananayarora.com)",
   "license": "ISC",
   "dependencies": {
-    "apple-auth": "git+https://github.com/AnandChowdhary/apple-auth#patch-1"
+    "apple-auth": "git+https://github.com/ananay/apple-auth"
   }
 }
