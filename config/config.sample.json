@@ -1,6 +1,7 @@
 {
     "client_id": "",
     "team_id": "",
-    "redirect_uri": "",
-    "key_id": ""
+    "key_id": "",
+    "redirect_uri": "https://apple-auth.example.com/auth",
+    "scope": "name email"
 }
