@@ -22,8 +22,9 @@ Make a config.json file in the config/ folder from the sample given:
 {
     "client_id": "",
     "team_id": "",
-    "redirect_uri": "",
-    "key_id": ""
+    "key_id": "",
+    "redirect_uri": "https://example.com/auth",
+    "scope": "name email"
 }
 ```
 
