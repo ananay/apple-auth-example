@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
-const config = fs.readFileSync('./config/config.json');
+const config = JSON.parse(fs.readFileSync('./config/config.json'));
 const AppleAuth = require('apple-auth');
 
 let auth = new AppleAuth(config, './config/AuthKey.p8');
