@@ -6,7 +6,7 @@ const AppleAuth = require('apple-auth');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 
-let auth = new AppleAuth(config, fs.readFileSync('./config/AuthKey.p8').toString());
+let auth = new AppleAuth(config, fs.readFileSync('./config/AuthKey.p8').toString(), 'text');
 
 app.get("/", (req, res) => {
     console.log( Date().toString() + "GET /");
